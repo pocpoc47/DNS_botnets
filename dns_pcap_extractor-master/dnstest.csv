@@ -1,0 +1,4 @@
+ts_sec,ts_usec,identifier,opcode,aa_flag,tc_flag,rd_flag,ra_flag,rcode,answers_count,authority_count,additional_count,ttl,s_addr,d_addr,q_name,q_type,q_class
+1591359387,657831,10346,0,0,0,1,1,0,1,0,0,2432,195.130.130.1,10.0.2.15,perdu.com,A,IN
+1591359391,211534,54715,0,0,0,1,1,0,1,0,0,4353,195.130.130.1,10.0.2.15,8.8.8.8.in-addr.arpa,PTR,IN
+1591359397,166951,58247,0,0,0,1,1,0,1,0,0,1456,195.130.130.1,10.0.2.15,1.1.1.1.in-addr.arpa,PTR,IN
