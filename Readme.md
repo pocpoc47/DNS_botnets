@@ -1,15 +1,17 @@
-* dns-traces-2018.zip
-  * capture of DNS traffic in pcap format over 24h on the two interfaces of the university DNS server (138.48.4.4 and 138.48.4.10)
-  * IP addresses have been anonymized
-  * two files: 8.52GB and 14.52GB
-* dns-traces-2017.zip
-  * capture of DNS traffic in pcap format over 24h
-  * IP addresses have been anonymized
-  * 8 files
-    * trace*dns*20170919_a.pcap (1.5GB)
-    * trace*dns*20170919_b.pcap (1.5GB)
-    * trace*dns*20170919_c.pcap (1.4GB)
-    * trace*dns*20170919_d.pcap (1.4GB)
-    * trace*dns*20170919_e.pcap (1.5GB)
-    * trace*dns*20170919_f.pcap (1.5GB)
-    * trace*dns*20170919_g.pcap (1GB)
+features:
+    ttl_log: logn(ttl) (so that big values dont overshadow small ones)
+    s_acount: number of time the source address appears in the dataset
+    rdatacount: number of different ip in the dataset for the q_name
+    idcount: number of time the identifier appears in the dataset
+    typecode: 0: A, 1: AAAA
+    known: 1: in the whitelist
+    name_len: length(q_name)
+    name_lvl: number of levels in the domain name (www.google.com: 3)
+    aa_flag
+    tc_flag
+    rd_flag
+    ra_flag
+    rcode
+    answers_count: number of answer to the request
+    authority_count
+    additional_count
